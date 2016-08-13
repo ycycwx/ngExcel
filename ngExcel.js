@@ -138,10 +138,10 @@
                     if (url.length < 1024*1024*1.999) {
                         if ('download' in anchor) { //html5 A[download]
                                 anchor.href = url;
-                                anchor.setAttribute("download", scope.xlsfilename);
-                                anchor.className = "download-js-link";
-                                anchor.innerHTML = "downloading...";
-                                anchor.style.display = "none";
+                                anchor.setAttribute('download', scope.xlsfilename);
+                                anchor.className = 'download-js-link';
+                                anchor.innerHTML = 'downloading...';
+                                anchor.style.display = 'none';
                                 document.body.appendChild(anchor);
                                 setTimeout(function() {
                                     anchor.click();
@@ -157,10 +157,10 @@
                             url = URL.createObjectURL(blob);
                             if ('download' in anchor) { //html5 A[download]
                                 anchor.href = url;
-                                anchor.setAttribute("download", scope.xlsfilename);
-                                anchor.className = "download-js-link";
-                                anchor.innerHTML = "downloading...";
-                                anchor.style.display = "none";
+                                anchor.setAttribute('download', scope.xlsfilename);
+                                anchor.className = 'download-js-link';
+                                anchor.innerHTML = 'downloading...';
+                                anchor.style.display = 'none';
                                 document.body.appendChild(anchor);
                                 setTimeout(function() {
                                     anchor.click();
